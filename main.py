@@ -14,7 +14,8 @@ def logistic_regression(sample_data: list, y: list):
     learning_rate = 0.01
     epochs = 1000
 
-
+def sigmoid(z):
+    return 1/(1+np.exp(-z))
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
